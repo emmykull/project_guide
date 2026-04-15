@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_POST['project_name']) || !isset($_POST['project_type'])) {
-    header("Location: start_project.php");
+    header("Location: start_project.html");
     exit();
 }
 
@@ -48,9 +48,9 @@ function updateProgress() {
     </div>
 
     <div class="nav-links" id="navLinks">
-        <a href="dashboard.php">Dashboard</a>
+        <a href="dashboard.html">Dashboard</a>
         <a href="start_project.php">Start Project</a>
-        <a href="logout.php">Logout</a>
+        <a href="logout.html">Logout</a>
     </div>
 </div>
 <div class="container">
