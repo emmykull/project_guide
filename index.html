@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'db.php';
+include 'db.html';
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +22,7 @@ include 'db.php';
             <button type="submit" name="login">Login</button>
 
             <p>Don't have an account? 
-                <a href="register.php">Register</a>
+                <a href="register.html">Register</a>
             </p>
         </form>
 
@@ -41,7 +41,7 @@ include 'db.php';
                     $_SESSION['user_id'] = $user['id'];
                     $_SESSION['name'] = $user['name'];
 
-                    header("Location: dashboard.php");
+                    header("Location: dashboard.html");
                 } else {
                     echo "<p style='color:red;'>Wrong password</p>";
                 }
