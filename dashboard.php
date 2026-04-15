@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['user_id'])) {
-    header("Location: index.php");
+    header("Location: index.html");
 }
 ?>
 
@@ -39,7 +39,7 @@ function toggleMenu() {
 
         <p>What would you like to do?</p>
 
-        <button onclick="location.href='start_project.php'">
+        <button onclick="location.href='start_project.html'">
             Start New Project
         </button>
 
